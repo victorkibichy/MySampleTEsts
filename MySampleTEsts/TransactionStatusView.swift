@@ -1,3 +1,13 @@
+//
+//  TransactionStatusView.swift
+//  MySampleTEsts
+//
+//  Created by Vic on 18/12/2025.
+//
+
+import SwiftUI
+
+
 struct TransactionStatusView: View {
     let status: TransactionStatus
 
@@ -16,5 +26,15 @@ struct TransactionStatusView: View {
             status.color.opacity(0.15)
         )
         .cornerRadius(12)
+    }
+}
+
+
+
+#Preview {
+    Group {
+        TransactionStatusView(status:  .success);
+        TransactionStatusView(status:  .pending);
+        TransactionStatusView(status: .reversed);
     }
 }

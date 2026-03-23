@@ -1,6 +1,16 @@
+//
+//  OverlappingFeedView.swift
+//  MySampleTEsts
+//
+//  Created by Vic on 19/03/2026.
+//
+
+
 import SwiftUI
 
 struct OverlappingFeedView: View {
+    @EnvironmentObject var model: AppModel
+
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
@@ -118,7 +128,7 @@ struct OverlappingFeedView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
             LinearGradient(
-                gradient: Gradient(colors: [Color(hex: "D4C5A3"), Color(hex: "8B7355")]),
+                gradient: Gradient(colors: [Color(bex: "D4C5A3"), Color(bex: "8B7355")]),
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
@@ -225,8 +235,8 @@ struct OverlappingFeedView: View {
 
 // Helper for Hex Colors
 extension Color {
-    init(hex: String) {
-        let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
+    init(tex: String) {
+        let hex = tex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int: UInt64 = 0
         Scanner(string: hex).scanHexInt64(&int)
         let a, r, g, b: UInt64

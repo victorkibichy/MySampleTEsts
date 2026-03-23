@@ -1,3 +1,13 @@
+//
+//  MoneyMovesCard.swift
+//  MySampleTEsts
+//
+//  Created by Vic on 17/03/2026.
+//
+
+import SwiftUI
+
+
 struct MoneyMovesCard: View {
     var data: MoneyMovesData  = MoneyMovesData()
     var onTap: () -> Void     = {}
@@ -59,4 +69,12 @@ struct MoneyMovesCard: View {
             withAnimation(.linear(duration: 1.6).delay(0.7)) { shimmerX = 400 }
         }
     }
+}
+#Preview {
+  MoneyMovesCard()
+}
+
+class MoneyMovesData{
+    
+    public var year: String = "Money Moves"
 }

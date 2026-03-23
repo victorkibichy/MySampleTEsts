@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MySampleTEstsApp: App {
+
+    @StateObject private var model = AppModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RevampedLandingScreen()
         }
     }
 }

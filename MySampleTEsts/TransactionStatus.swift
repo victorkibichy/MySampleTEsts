@@ -1,3 +1,11 @@
+//
+//  TransactionStatus.swift
+//  MySampleTEsts
+//
+//  Created by Vic on 18/12/2025.
+//
+
+
 import SwiftUI
 
 enum TransactionStatus: Int {
@@ -18,6 +26,7 @@ enum TransactionStatus: Int {
             return "Reversed"
         }
     }
+    static var allCases: [TransactionStatus] = [.pending, .success, .failed, .reversed]
 
     var color: Color {
         switch self {

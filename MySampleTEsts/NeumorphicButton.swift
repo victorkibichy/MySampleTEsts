@@ -1,3 +1,13 @@
+//
+//  NeumorphicButton.swift
+//  MySampleTEsts
+//
+//  Created by Vic on 11/02/2026.
+//
+
+import SwiftUI
+
+
 struct NeumorphicButton: View {
     var body: some View {
         ZStack {
@@ -11,4 +21,8 @@ struct NeumorphicButton: View {
         }
         .frame(width: 200, height: 60)
     }
+}
+
+#Preview {
+    NeumorphicButton()
 }

@@ -1,3 +1,12 @@
+//
+//  GlassCard.swift
+//  MySampleTEsts
+//
+//  Created by Vic on 11/02/2026.
+//
+
+import SwiftUI
+
 struct GlassCard: View {
     var body: some View {
         ZStack {
@@ -11,7 +20,11 @@ struct GlassCard: View {
 
             Text("Glass Card")
                 .font(.title)
-                .foregroundColor(.white)
+                .foregroundColor(.black.opacity(0.5))
         }
     }
+}
+
+#Preview {
+    GlassCard()
 }

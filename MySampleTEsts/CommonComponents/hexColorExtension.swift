@@ -8,8 +8,8 @@
 import SwiftUI
 
 extension Color {
-    init(hex: String) {
-        let scanner = Scanner(string: hex)
+    init(bex: String) {
+        let scanner = Scanner(string: bex)
         scanner.charactersToBeSkipped = CharacterSet(charactersIn: "#")
 
         var rgb: UInt64 = 0
